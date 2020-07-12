@@ -146,6 +146,22 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
+				<string>ACPIBatteryManager.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/ACPIBatteryManager</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
 				<string>ACPISensors.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -338,13 +354,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext</string>
+				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooInput</string>
+				<string>Contents/MacOS/VoodooPS2Trackpad</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -386,13 +402,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
+				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooPS2Trackpad</string>
+				<string>Contents/MacOS/VoodooInput</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -502,13 +518,13 @@
 			<key>HibernateMode</key>
 			<string>Auto</string>
 			<key>HideAuxiliary</key>
-			<true/>
+			<false/>
 			<key>PickerAttributes</key>
 			<integer>6</integer>
 			<key>PickerAudioAssist</key>
-			<true/>
+			<false/>
 			<key>PickerMode</key>
-			<string>External</string>
+			<string>Builtin</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -778,7 +794,7 @@
 				<key>SystemAudioVolume</key>
 				<data>ZA==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1</string>
+				<string>-v keepsyms=1</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -892,11 +908,11 @@
 			<key>AudioOut</key>
 			<integer>1</integer>
 			<key>AudioSupport</key>
-			<true/>
+			<false/>
 			<key>MinimumVolume</key>
 			<integer>100</integer>
 			<key>PlayChime</key>
-			<true/>
+			<false/>
 			<key>VolumeAmplifier</key>
 			<integer>0</integer>
 		</dict>
